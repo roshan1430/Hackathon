@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MutualFunds Pro - Smart Investment Platform</title>
+
     <meta name="description" content="Intelligent mutual fund investment platform with expert guidance, fund comparison, and portfolio management tools for smart investing." />
     <meta name="author" content="MutualFunds Pro" />
     <meta name="keywords" content="mutual funds, investment, portfolio, financial planning, SIP, fund comparison" />
-    <link rel="icon" type="image/png" href="image.jpg" />
 
+    <!-- Fix favicon path -->
+    <link rel="icon" type="image/png" href="/image.jpg" />
+
+    <!-- FIXED: Remove Windows path -->
     <meta property="og:title" content="MutualFunds Pro - Smart Investment Platform" />
-    <meta property="og:description" content="Make informed investment decisions with our comprehensive mutual fund platform. Expert guidance and smart analytics." />
+    <meta property="og:description" content="Make informed investment decisions with our comprehensive mutual fund platform." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="D:\Mutual-Fund\public\image.jpg" />
+    <meta property="og:image" content="/image.jpg" />
 
-   <meta name="twitter:card" content="summary_large_image" />
-   <meta name="twitter:site" content="@Roshan" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Roshan" />
 
+    <!-- IMPORTANT FOR VERCEL: FIX PATH RESOLUTION -->
+    <base href="/" />
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!-- THIS PATH IS CORRECT -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
